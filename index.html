@@ -4,16 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Under Construction</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #000;
+            font-family: sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .crane-container {
+            position: relative;
+            width: 100px;
+            height: 300px;
+            margin: 50px auto;
+        }
+
+        .crane-arm {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 10px;
+            height: 200px;
+            background-color: grey;
+            transform: translateX(-50%);
+        }
+
+        .crane-hook {
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            width: 30px;
+            height: 50px;
+            background-color: grey;
+            transform: translateX(-50%);
+            transition: top 0.5s ease;
+        }
+    </style>
 </head>
 <body>
-    <div class="construction-container">
-        <h1>Our Website is Under Construction</h1>
-        <div class="animation-container">
-            <div class="crane"></div>
-            <div class="bar"></div>
-        </div>
-        <p>Stay tuned for something amazing!</p>
+    <div class="crane-container">
+        <div class="crane-arm"></div>
+        <div class="crane-hook" id="craneHook"></div>
     </div>
+
+    <script>
+        const craneHook = document.getElementById('craneHook');
+
+        craneHook.addEventListener('mouseover', function() {
+            craneHook.style.top = '150px';
+        });
+
+        craneHook.addEventListener('mouseout', function() {
+            craneHook.style.top = '200px';
+        });
+    </script>
 </body>
 </html>
