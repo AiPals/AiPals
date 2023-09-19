@@ -2,59 +2,54 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    color: #333;
+    margin: 0;
 }
 
 .construction-container {
     text-align: center;
-    background: #fff;
+    background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
 }
 
-.animation-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    margin: 20px 0;
+h1 {
+    color: #333;
+    font-size: 1.5em;
 }
 
-.crane {
-    width: 30px;
-    height: 80px;
-    background: #333;
-    position: relative;
+.loader {
+    border: 16px solid #f4f4f4;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
 }
 
-.crane::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 150px;
-    height: 10px;
-    background: #333;
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
-.bar {
-    width: 10px;
-    height: 40px;
-    background: #ff4500;
-    margin-left: 70px;
-    animation: barAnimation 1.5s infinite alternate;
+p {
+    color: #777;
 }
 
-@keyframes barAnimation {
-    from {
-        transform: translateY(0);
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
     }
-    to {
-        transform: translateY(-20px);
+
+    .loader {
+        width: 40px;
+        height: 40px;
+        border-width: 12px;
     }
 }
