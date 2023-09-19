@@ -3,63 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-    <style>
-        body {
-            background-color: #000;
-            font-family: sans-serif;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .crane-container {
-            position: relative;
-            width: 100px;
-            height: 300px;
-            margin: 50px auto;
-        }
-
-        .crane-arm {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 10px;
-            height: 200px;
-            background-color: grey;
-            transform: translateX(-50%);
-        }
-
-        .crane-hook {
-            position: absolute;
-            top: 200px;
-            left: 50%;
-            width: 30px;
-            height: 50px;
-            background-color: grey;
-            transform: translateX(-50%);
-            transition: top 0.5s ease;
-        }
-    </style>
+    <title>AiPals.dev</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="crane-container">
-        <div class="crane-arm"></div>
-        <div class="crane-hook" id="craneHook"></div>
-    </div>
+    <!-- Header -->
+    <header>
+        <h1>AiPals.dev</h1></h1>
+    </header>
 
-    <script>
-        const craneHook = document.getElementById('craneHook');
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-        craneHook.addEventListener('mouseover', function() {
-            craneHook.style.top = '150px';
-        });
+    <!-- Main Content Area -->
+    <main>
+        <!-- Crane Animation -->
+        <div class="crane-container">
+            <div class="crane-arm"></div>
+            <div class="crane-hook" id="craneHook"></div>
+        </div>
 
-        craneHook.addEventListener('mouseout', function() {
-            craneHook.style.top = '200px';
-        });
-    </script>
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Website Under Construction! Something Good is Comming!</h2>
+            <a href="#" class="button">Sign Up</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2023 AiPals.dev</p>
+        <a href="#">License</a>
+        <a href="#">About</a>
+        <a href="#top">Scroll Top</a>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
