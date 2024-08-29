@@ -1,26 +1,98 @@
+/* styles.css */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    text-decoration: none;
+    color: #00bfff;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #00bfff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ffcc;
+}
+
+.hero-section {
     height: 100vh;
-    margin: 0;
-}
-
-.construction-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('path/to/hero-background.webp') no-repeat center center/cover;
     text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 500px;
 }
 
-h1 {
-    color: #333;
-    font-size: 1.5em;
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #00bfff;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #00bfff;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #00ffcc;
+}
+
+.features-section,
+.ai-section,
+.documentation-section,
+.community-section,
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #00bfff;
+}
+
+p {
+    color: #dcdcdc;
 }
 
 .loader {
