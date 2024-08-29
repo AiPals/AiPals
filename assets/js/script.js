@@ -1,11 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const craneHook = document.getElementById("craneHook");
+// script.js
 
-    craneHook.addEventListener("mouseover", function() {
-        craneHook.style.bottom = "100px"; // Move the hook up
-    });
-
-    craneHook.addEventListener("mouseout", function() {
-        craneHook.style.bottom = "0"; // Return the hook to its original position
+document.addEventListener('DOMContentLoaded', function () {
+    // Smooth scrolling for navigation links
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            document.getElementById(targetId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
 });
