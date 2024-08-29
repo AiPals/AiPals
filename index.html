@@ -4,55 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjectSentinel - AI-Powered Cybersecurity</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ProjectSentinel</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Hero Section -->
+    <!-- Header with Collapsible Menu and Theme Switcher -->
     <header class="hero-section">
         <div class="hero-content">
-            <img src="path_to_your_logo.png" alt="ProjectSentinel Logo" class="logo">
-            <h1 class="tagline">AI-Powered Cybersecurity for the Modern World</h1>
-            <a href="#features" class="cta-button">Explore Features</a>
+            <img src="assets/images/shield-logo.webp" alt="ProjectSentinel Logo" class="logo">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="theme-switcher">
+                <button class="theme-btn light-dark-toggle" onclick="toggleTheme()">☀️</button>
+                <div class="color-controls">
+                    <button class="color-btn blue"></button>
+                    <button class="color-btn green"></button>
+                    <button class="color-btn purple"></button>
+                    <button class="color-btn orange"></button>
+                    <input type="range" class="intensity-slider" min="0" max="100" value="50">
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Features Overview -->
-    <section id="features" class="features-section">
-        <h2>Core Features</h2>
-        <div class="features-grid">
-            <div class="feature-item">
-                <h3>Real-Time Monitoring</h3>
-                <p>Constantly analyze and respond to threats with live data feeds.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Machine Learning Integration</h3>
-                <p>Leverage AI to predict and prevent security breaches dynamically.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Advanced Analytics</h3>
-                <p>Access detailed insights and diagnostics on network security.</p>
-            </div>
+    <!-- Carousel Tiles Section -->
+    <section class="carousel-section">
+        <div class="carousel">
+            <!-- Individual tile items -->
+            <div class="tile" style="background-color: var(--primary-color);">Tile 1 Content</div>
+            <div class="tile" style="background-color: var(--secondary-color);">Tile 2 Content</div>
+            <div class="tile" style="background-color: var(--tertiary-color);">Tile 3 Content</div>
         </div>
     </section>
 
-    <!-- AI Integration Section -->
-    <section id="ai-integration" class="ai-section">
-        <h2>AI and Machine Learning at Work</h2>
-        <p>See how ProjectSentinel uses AI to protect and learn from each interaction.</p>
-        <div id="ai-animation" class="animation-area"></div>
-    </section>
-
-    <!-- Documentation Section -->
-    <section id="documentation" class="docs-section">
-        <h2>Documentation and Tutorials</h2>
-        <p>Get started with ProjectSentinel, integrate, and master the platform.</p>
-        <button class="expand-button">Expand Docs</button>
-        <div class="docs-content" style="display: none;">
-            <p>Detailed guides and setup instructions...</p>
+    <!-- Features Section with Collapsible Items -->
+    <section class="features-section">
+        <button class="collapse-toggle" onclick="toggleCollapse()">Features +</button>
+        <div class="features-content" style="display: none;">
+            <!-- Futuristic design elements go here -->
+            <div class="feature-item">Advanced Analytics</div>
+            <div class="feature-item">Real-Time Monitoring</div>
         </div>
     </section>
 
-    <script src="scripts.js"></script>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>© 2024 ProjectSentinel. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com/AiPals" target="_blank">GitHub</a>
+            <a href="#">X</a>
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
