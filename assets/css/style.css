@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
     transition: background-color 0.5s, color 0.5s;
 }
 
+/* Header Styles */
 .header {
     display: flex;
     justify-content: space-between;
@@ -24,6 +26,7 @@ body {
     border: none;
     background: none;
     color: #fff;
+    cursor: pointer;
 }
 
 .menu {
@@ -31,12 +34,14 @@ body {
     display: none; /* Hidden by default */
 }
 
+/* Theme Toggle */
 .theme-toggle {
     cursor: pointer;
     font-size: 24px;
     margin-left: 20px;
 }
 
+/* Hero Section */
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -54,8 +59,14 @@ body {
     color: white;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+.cta-button:hover {
+    background: #45a049; /* Darken the button on hover */
+}
+
+/* Features Grid */
 .features-grid {
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +75,7 @@ body {
     padding: 20px;
 }
 
+/* Feature Tile */
 .feature-tile {
     width: 250px;
     height: 300px;
@@ -72,18 +84,43 @@ body {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
     color: #000; /* Black text */
+    backdrop-filter: blur(10px); /* Creates the frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Enhance glass effect */
 }
 
 .feature-tile:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
 }
 
+/* Feature Tile Content */
+.feature-tile img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-tile h3 {
+    color: #ffffff; /* Adjust based on background */
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.feature-tile p {
+    color: #f0f0f0; /* Adjust text color for visibility */
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Carousel */
 .carousel {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    padding: 20px 0;
 }
 
 .carousel-item {
@@ -98,4 +135,8 @@ body {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}  
+}
+
+.carousel-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
