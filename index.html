@@ -4,55 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjectSentinel</title>
+    <title>ProjectSentinel - AI-Powered Cybersecurity</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Header with Collapsible Menu and Theme Switcher -->
-    <header class="hero-section">
-        <div class="hero-content">
+    <!-- Header Section with Collapsible Menu -->
+    <header class="header">
+        <div class="logo-container">
             <img src="assets/images/shield-logo.webp" alt="ProjectSentinel Logo" class="logo">
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-            <div class="theme-switcher">
-                <button class="theme-btn light-dark-toggle" onclick="toggleTheme()">☀️</button>
-                <div class="color-controls">
-                    <button class="color-btn blue"></button>
-                    <button class="color-btn green"></button>
-                    <button class="color-btn purple"></button>
-                    <button class="color-btn orange"></button>
-                    <input type="range" class="intensity-slider" min="0" max="100" value="50">
-                </div>
-            </div>
         </div>
+        <nav class="nav">
+            <button class="menu-toggle">☰</button>
+            <ul class="menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#ai-integration">AI Integration</a></li>
+                <li><a href="#documentation">Documentation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Carousel Tiles Section -->
-    <section class="carousel-section">
-        <div class="carousel">
-            <!-- Individual tile items -->
-            <div class="tile" style="background-color: var(--primary-color);">Tile 1 Content</div>
-            <div class="tile" style="background-color: var(--secondary-color);">Tile 2 Content</div>
-            <div class="tile" style="background-color: var(--tertiary-color);">Tile 3 Content</div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>AI-Powered Cybersecurity for the Modern World</h1>
+        <p>Protecting your devices with cutting-edge technology.</p>
+        <button class="cta-button">Explore Features</button>
+    </section>
+
+    <!-- Features Section with Interactive Tiles -->
+    <section id="features" class="features-section">
+        <h2>Core Features</h2>
+        <div class="features-grid">
+            <!-- Blue Glass Design Tiles -->
+            <div class="feature-tile blue-tile">
+                <img src="assets/images/cpu-chip.png" alt="CPU Monitoring">
+                <h3>CPU Monitoring</h3>
+                <p>Real-time analysis of CPU performance to detect anomalies.</p>
+            </div>
+            <div class="feature-tile blue-tile">
+                <img src="assets/images/gpu-monitoring.png" alt="GPU Monitoring">
+                <h3>GPU Monitoring</h3>
+                <p>Detect and respond to unusual GPU behavior.</p>
+            </div>
+            <div class="feature-tile blue-tile">
+                <img src="assets/images/sensor-analysis.png" alt="Sensor Analysis">
+                <h3>Sensor Analysis</h3>
+                <p>Constantly monitor sensor data to prevent exploitation.</p>
+            </div>
+            <!-- Add more tiles as needed -->
         </div>
     </section>
 
-    <!-- Features Section with Collapsible Items -->
-    <section class="features-section">
-        <button class="collapse-toggle" onclick="toggleCollapse()">Features +</button>
-        <div class="features-content" style="display: none;">
-            <!-- Futuristic design elements go here -->
-            <div class="feature-item">Advanced Analytics</div>
-            <div class="feature-item">Real-Time Monitoring</div>
-        </div>
+    <!-- AI Integration Section -->
+    <section id="ai-integration" class="ai-section">
+        <h2>AI and Machine Learning at Work</h2>
+        <p>See how ProjectSentinel uses AI to protect and learn from each interaction.</p>
+        <div id="ai-animation" class="animation-area"></div>
     </section>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <p>© 2024 ProjectSentinel. All rights reserved.</p>
+        <p>&copy; 2024 ProjectSentinel. All Rights Reserved.</p>
         <div class="social-icons">
-            <a href="https://github.com/AiPals" target="_blank">GitHub</a>
-            <a href="#">X</a>
-            <a href="#">Facebook</a>
+            <a href="https://github.com/AiPals"><img src="assets/images/github-icon.png" alt="GitHub"></a>
+            <a href="https://twitter.com/yourhandle"><img src="assets/images/twitter-icon.png" alt="Twitter"></a>
+            <!-- Add other social media links -->
         </div>
     </footer>
 
