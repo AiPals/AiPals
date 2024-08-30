@@ -2,9 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8; /* Light background */
-    color: #333; /* Dark text */
-    transition: background-color 0.5s, color 0.5s; /* For light/dark mode */
+    background-color: #f0f4f8;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .header {
@@ -31,19 +31,25 @@ body {
     display: none; /* Hidden by default */
 }
 
+.theme-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
 .hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 50px;
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); /* Gradient */
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
     color: white;
 }
 
 .cta-button {
     padding: 10px 20px;
-    background: #4CAF50; /* Green */
+    background: #4CAF50;
     border: none;
     color: white;
     font-size: 16px;
@@ -61,14 +67,20 @@ body {
 .feature-tile {
     width: 250px;
     height: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(173, 216, 230, 0.5); /* Light blue glass effect */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.2s;
+    color: #000; /* Black text */
 }
 
 .feature-tile:hover {
     transform: scale(1.05);
 }
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+}  
