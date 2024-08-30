@@ -83,4 +83,19 @@ body {
 .carousel {
     display: flex;
     overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 80%;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }  
