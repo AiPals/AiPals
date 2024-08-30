@@ -1,2 +1,2 @@
-# AiPals-Website 
+# ProjectSentinel-Website 
 ## 🚧Under Construction🚧 
