@@ -55,9 +55,9 @@ We rely on community support to maintain and grow ProjectSentinel. If you’d li
 
 # Connect with US
         
-        •.     ProjectSentinel is private for now, but if you would like to Contribute now, you can get in contact with me by sending an email to JesusC@AIPalsmail.com
+        •     ProjectSentinel is private for now, but if you would like to Contribute now, you can get in contact with me by sending an email to JesusC@AIPalsmail.com
         •      JesusC@AIPalamail.com
-	•      GitHub:AiPals-ProjectSentinel Repository
+	•      GitHub:AiPals ProjectSentinel Repository
 	•	Website: Visit Our Website AiPals.GitHub.io (our website is under construction). So email us! We will be glad to hear from you!
 	•	Social Media: Follow us on GitHub, X (Twitter), Facebook, and more.
 
