@@ -78,7 +78,7 @@ We are looking for **contributors** who share our passion for technology and hum
 ## **Contact Us**
 
 If you're interested in collaborating, have questions, or want to learn more, feel free to reach out:
-- **Email**: [YourEmail@example.com] (optional, for collaboration inquiries)
+- **Email**: AiPals@outlook.com (optional, for collaboration inquiries)
 - **GitHub**: [AiPals](https://github.com/AiPals)
 - **Social Media**: *(Add links if applicable)*
 
