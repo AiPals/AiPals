@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.3s, color 0.3s;
+    background-image: url("assets/images/background.jpg"); /* Use your uploaded image */
+    background-size: cover;
+    background-position: center;
 }
 
 /* Dark Mode */
@@ -12,20 +15,19 @@ body.dark-mode {
     color: #ffffff;
 }
 
-/* Accent Color Variable */
-:root {
-    --accent-color: lightblue;
-}
-
-/* Collapsible Sections */
-.collapsible {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease-out;
-}
-
-.collapsible.collapsed {
-    max-height: 1000px; /* Adjust as needed for content */
+/* Glass Effect */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 2em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2em;
 }
 
 /* Theme Controls */
@@ -42,4 +44,17 @@ button, select {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#theme-switcher {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease;
+}
+
+#theme-switcher:hover {
+    transform: scale(1.2);
 }
