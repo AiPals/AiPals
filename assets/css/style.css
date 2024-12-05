@@ -1,161 +1,17 @@
-/* Root variables */
-:root {
-    --background-color: #f0f4f8;
-    --text-color: #333;
-    --glass-background: rgba(173, 216, 230, 0.5);
-    --highlight-color: #1a2a6c;
-    --button-bg: #4CAF50;
-    --button-hover: #45a049;
-}
+// Toggle Light/Dark Theme
+const themeSwitcher = document.getElementById('theme-switcher');
+themeSwitcher.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
 
-/* Dark Mode Variables */
-.dark-mode {
-    --background-color: #1a1a1a;
-    --text-color: #e0e0e0;
-    --glass-background: rgba(30, 30, 30, 0.5);
-    --highlight-color: #fdbb2d;
-    --button-bg: #444;
-    --button-hover: #555;
-}
+// Change Accent Color
+const colorPicker = document.getElementById('color-picker');
+colorPicker.addEventListener('change', (event) => {
+    document.documentElement.style.setProperty('--accent-color', event.target.value);
+});
 
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    transition: background-color 0.5s, color 0.5s;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.logo {
-    height: 40px;
-}
-
-.menu-toggle {
-    font-size: 24px;
-    border: none;
-    background: none;
-    color: var(--text-color);
-    cursor: pointer;
-}
-
-.menu {
-    list-style: none;
-    display: none;
-}
-
-.theme-toggle {
-    cursor: pointer;
-    font-size: 24px;
-    margin-left: 20px;
-}
-
-/* Controls Section */
-.controls-section {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.color-buttons .color-button {
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.color-buttons .color-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.slider-container {
-    display: flex;
-    align-items: center;
-}
-
-.intensity-slider {
-    width: 200px;
-}
-
-/* Glass Effect Boxes */
-.glass-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-.glass-box {
-    height: 150px;
-    background: var(--glass-background);
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
-}
-
-/* Carousel Section */
-.carousel-section {
-    position: relative;
-    padding: 20px;
-}
-
-.carousel {
-    display: flex;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
-.carousel-item {
-    flex: 0 0 auto;
-    width: 100px;
-    margin: 0 10px;
-    transition: transform 0.2s;
-}
-
-.carousel-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: var(--button-bg);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    padding: 10px;
-    border-radius: 50%;
-    transition: background 0.3s;
-}
-
-.carousel-nav:hover {
-    background: var(--button-hover);
-}
-
-.left-arrow {
-    left: 10px;
-}
-
-.right-arrow {
-    right: 10px;
+// Toggle Collapsible Sections
+function toggleCollapse(id) {
+    const section = document.getElementById(id);
+    section.classList.toggle('collapsed');
 }
