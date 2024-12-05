@@ -1,7 +1,3 @@
----
-
-### Updated **JavaScript (theme-switcher.js)**
-```javascript
 // Toggle Light/Dark Theme
 const themeSwitcher = document.getElementById('theme-switcher');
 themeSwitcher.addEventListener('click', () => {
@@ -12,11 +8,6 @@ themeSwitcher.addEventListener('click', () => {
 // Change Accent Color
 const colorPicker = document.getElementById('color-picker');
 colorPicker.addEventListener('change', (event) => {
-    document.documentElement.style.setProperty('--accent-color', event.target.value);
+    const color = event.target.value;
+    document.documentElement.style.setProperty('--accent-color', color);
 });
-
-// Toggle Collapsible Sections
-function toggleCollapse(id) {
-    const section = document.getElementById(id);
-    section.classList.toggle('collapsed');
-}
