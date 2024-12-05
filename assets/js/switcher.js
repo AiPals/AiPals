@@ -1,3 +1,4 @@
+
 // Function to toggle Light/Dark Theme
 document.addEventListener("DOMContentLoaded", () => {
     const themeSwitcher = document.getElementById("theme-switcher");
