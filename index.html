@@ -2,78 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjectSentinel - Advanced UI</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>AiPals | Innovating Cybersecurity</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo-container">
-            <img src="assets/images/shield-logo.webp" alt="ProjectSentinel Logo" class="logo">
-        </div>
-        <nav class="nav">
-            <button class="menu-toggle">☰</button>
-            <ul class="menu">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#ai-integration">AI Integration</a></li>
-                <li><a href="#documentation">Documentation</a></li>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="AiPals Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="educational.html">Educational</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="theme-toggle" id="theme-toggle">🌞</div>
+            <!-- Theme Switcher and Color Picker -->
+            <div class="theme-controls">
+                <button id="theme-switcher">Toggle Light/Dark Mode</button>
+                <select id="color-picker">
+                    <option value="blue">Light Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
         </nav>
     </header>
 
-    <!-- Color and Intensity Controls -->
-    <section class="controls-section">
-        <div class="color-buttons">
-            <button class="color-button" data-color="rgba(173, 216, 230, 0.5)" style="background-color: #ADD8E6;">Light Blue</button>
-            <button class="color-button" data-color="rgba(144, 238, 144, 0.5)" style="background-color: #90EE90;">Light Green</button>
-            <button class="color-button" data-color="rgba(221, 160, 221, 0.5)" style="background-color: #DDA0DD;">Purple</button>
-            <button class="color-button" data-color="rgba(255, 165, 0, 0.5)" style="background-color: #FFA500;">Orange</button>
-        </div>
-        <div class="slider-container">
-            <input type="range" min="0.1" max="1" step="0.1" value="0.5" class="intensity-slider">
-        </div>
-    </section>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to AiPals</h1>
+                <p>Innovating cybersecurity, protecting privacy, and empowering individuals.</p>
+                <button onclick="scrollToSection('about')">Learn More</button>
+            </div>
+        </section>
 
-    <!-- Glass Effect Boxes -->
-    <section class="glass-section">
-        <div class="glass-box"></div>
-        <div class="glass-box"></div>
-        <div class="glass-box"></div>
-        <div class="glass-box"></div>
-        <div class="glass-box"></div>
-        <div class="glass-box"></div>
-    </section>
+        <!-- Collapsible Feature Section -->
+        <section id="features">
+            <h2 onclick="toggleCollapse('features-collapse')">What We Do</h2>
+            <div id="features-collapse" class="collapsible">
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>Cybersecurity</h3>
+                        <p>Advanced tools and techniques to protect systems and individuals.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Education</h3>
+                        <p>Learn cryptography, reverse engineering, and hacking techniques.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Innovative Tools</h3>
+                        <p>Discover and use state-of-the-art tools for vulnerability scanning and analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Carousel with Images -->
-    <section class="carousel-section">
-        <div class="carousel" id="carousel">
-            <div class="carousel-item"><img src="assets/images/image1.webp" alt="Image 1"></div>
-            <div class="carousel-item"><img src="assets/images/image2.webp" alt="Image 2"></div>
-            <div class="carousel-item"><img src="assets/images/image3.webp" alt="Image 3"></div>
-            <div class="carousel-item"><img src="assets/images/image4.webp" alt="Image 4"></div>
-            <div class="carousel-item"><img src="assets/images/image5.webp" alt="Image 5"></div>
-            <div class="carousel-item"><img src="assets/images/image6.webp" alt="Image 6"></div>
-            <div class="carousel-item"><img src="assets/images/image7.webp" alt="Image 7"></div>
-            <div class="carousel-item"><img src="assets/images/image8.webp" alt="Image 8"></div>
-            <div class="carousel-item"><img src="assets/images/image9.webp" alt="Image 9"></div>
-            <div class="carousel-item"><img src="assets/images/image10.webp" alt="Image 10"></div>
-        </div>
-        <button class="carousel-nav left-arrow" id="left-arrow">&#10094;</button>
-        <button class="carousel-nav right-arrow" id="right-arrow">&#10095;</button>
-    </section>
+        <!-- Collapsible Projects Section -->
+        <section id="projects">
+            <h2 onclick="toggleCollapse('projects-collapse')">Our Projects</h2>
+            <div id="projects-collapse" class="collapsible">
+                <div class="project-grid">
+                    <div class="project-item">
+                        <h3>PHOENIX Communicator</h3>
+                        <p>A secure platform with blockchain and post-quantum encryption.</p>
+                        <a href="projects.html#phoenix">Learn More</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>CRY Initiative</h3>
+                        <p>Exposing abuse and supporting vulnerable individuals.</p>
+                        <a href="projects.html#cry">Learn More</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>Cybersecurity-Code</h3>
+                        <p>Open-source tools for ethical hacking and vulnerability detection.</p>
+                        <a href="tools.html">Explore Tools</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer class="footer">
-        <p>&copy; 2024 ProjectSentinel. All Rights Reserved.</p>
-        <div class="social-icons">
-            <a href="https://github.com/AiPals"><img src="assets/images/github-icon.png" alt="GitHub"></a>
-            <a href="https://twitter.com/yourhandle"><img src="assets/images/twitter-icon.png" alt="Twitter"></a>
-        </div>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email us at <a href="mailto:Aipals@outlook.com">AiPals@outlook.com</a> or <a href="mailto:0nehack@keemail.me">0nehack@keemail.me</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AiPals. All rights reserved.</p>
     </footer>
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="scripts/theme-switcher.js"></script>
 </body>
 </html>
