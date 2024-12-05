@@ -1,0 +1,45 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Accent Color Variable */
+:root {
+    --accent-color: lightblue;
+}
+
+/* Collapsible Sections */
+.collapsible {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.collapsible.collapsed {
+    max-height: 1000px; /* Adjust as needed for content */
+}
+
+/* Theme Controls */
+.theme-controls {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+button, select {
+    padding: 0.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
