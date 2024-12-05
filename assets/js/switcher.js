@@ -1,7 +1,12 @@
+---
+
+### Updated **JavaScript (theme-switcher.js)**
+```javascript
 // Toggle Light/Dark Theme
 const themeSwitcher = document.getElementById('theme-switcher');
 themeSwitcher.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+    themeSwitcher.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
 
 // Change Accent Color
