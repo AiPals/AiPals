@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AiPals | Innovating Cybersecurity</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>AiPals | Cybersecurity Redefined</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="AiPals Logo">
-            </div>
+        <nav class="navbar">
+            <div class="logo">AiPals</div>
             <ul class="nav-links">
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="tools.html">Tools</a></li>
-                <li><a href="educational.html">Educational</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-            <!-- Theme and Color Controls -->
             <div class="theme-controls">
                 <button id="theme-switcher">🌙</button>
                 <select id="color-picker">
-                    <option value="blue">Light Blue</option>
+                    <option value="lightblue">Light Blue</option>
                     <option value="purple">Purple</option>
                     <option value="green">Green</option>
                 </select>
@@ -32,33 +28,19 @@
     </header>
 
     <main>
-        <section id="hero">
-            <div class="glass-effect">
+        <section class="hero-section">
+            <div class="glass-container">
                 <h1>Welcome to AiPals</h1>
                 <p>Innovating cybersecurity, protecting privacy, and empowering individuals.</p>
-                <button onclick="scrollToSection('about')">Learn More</button>
-            </div>
-        </section>
-
-        <section id="features">
-            <div class="glass-effect">
-                <h2>What We Do</h2>
-                <p>Discover our focus on cybersecurity, education, and innovative tools for a secure digital future.</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="glass-effect">
-                <h2>Contact Us</h2>
-                <p>Email us at <a href="mailto:Aipals@outlook.com">AiPals@outlook.com</a> or <a href="mailto:0nehack@keemail.me">0nehack@keemail.me</a>.</p>
+                <button class="cta-button">Learn More</button>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 AiPals. All rights reserved.</p>
+        <p>&copy; 2024 AiPals. All Rights Reserved.</p>
     </footer>
 
-    <script src="scripts/theme-switcher.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
