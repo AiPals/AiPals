@@ -1,60 +1,109 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset and General Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     transition: background-color 0.3s, color 0.3s;
-    background-image: url("assets/images/background.jpg"); /* Use your uploaded image */
+    background-image: url("background.jpg"); /* Add your background image */
     background-size: cover;
     background-position: center;
+    color: #000;
 }
 
 /* Dark Mode */
 body.dark-mode {
     background-color: #121212;
-    color: #ffffff;
+    color: #fff;
 }
 
-/* Glass Effect */
-.glass-effect {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
-    padding: 2em;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 2em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color, lightblue);
 }
 
 /* Theme Controls */
 .theme-controls {
     display: flex;
-    gap: 1em;
-    justify-content: flex-end;
-    padding: 1em;
-}
-
-button, select {
-    padding: 0.5em;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    align-items: center;
+    gap: 1rem;
 }
 
 #theme-switcher {
-    font-size: 1.5em;
-    background: none;
-    border: none;
+    font-size: 1.5rem;
     cursor: pointer;
+    border: none;
+    background: none;
     outline: none;
     transition: transform 0.3s ease;
 }
 
 #theme-switcher:hover {
     transform: scale(1.2);
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cta-button {
+    background-color: var(--accent-color, lightblue);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: darkblue;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f0f0f0;
+    color: #333;
 }
